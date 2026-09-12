@@ -3,36 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MokletTech</title>
+  <title>MokletTech — Solusi Digital Untuk Indonesia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="header-inner">
-      <div class="logo">Moklet<span>Tech</span></div>
-      <nav>
+      <a href="#home" class="logo">Moklet<span>Tech</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="siteNav">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#tentang">Tentang</a></li>
           <li><a href="#layanan">Layanan</a></li>
-          <li><a href="https://wa.me/62821" class="tombol-wa" target="_blank">Kontak</a></li>
+          <li><a href="https://wa.me/62821" class="tombol-wa" target="_blank" rel="noopener">Kontak</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Ditambahkan id="home" -->
   <section class="judul" id="home">
-    <h1>Solusi Digital <br> <span>Untuk Indonesia</span></h1>
-    <p class="judul-sub">Kami membangun produk digital yang modern, cepat, dan berkesan.</p>
-    <a href="#layanan" class="layananbutton">Lihat Layanan</a>
+    <div class="isi judul-grid">
+      <div class="judul-teks">
+        <p class="eyebrow">MokletTech</p>
+        <h1>Solusi digital<br><em>untuk Indonesia.</em></h1>
+        <p class="judul-sub">Kami membangun produk digital yang modern, cepat, dan berkesan — dari website, aplikasi, hingga desain antarmuka.</p>
+        <a href="#layanan" class="layananbutton">Lihat layanan kami</a>
+      </div>
+      <div class="judul-grafis" aria-hidden="true">
+        <svg viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
+          <line x1="80" y1="90" x2="210" y2="60" class="g-line"/>
+          <line x1="210" y1="60" x2="340" y2="120" class="g-line"/>
+          <line x1="80" y1="90" x2="120" y2="230" class="g-line"/>
+          <line x1="210" y1="60" x2="210" y2="210" class="g-line"/>
+          <line x1="340" y1="120" x2="300" y2="270" class="g-line"/>
+          <line x1="120" y1="230" x2="210" y2="210" class="g-line"/>
+          <line x1="210" y1="210" x2="300" y2="270" class="g-line"/>
+          <line x1="120" y1="230" x2="150" y2="350" class="g-line"/>
+          <line x1="300" y1="270" x2="260" y2="360" class="g-line"/>
+          <line x1="150" y1="350" x2="260" y2="360" class="g-line"/>
+          <circle cx="80" cy="90" r="9" class="g-node"/>
+          <circle cx="210" cy="60" r="13" class="g-node g-node-accent"/>
+          <circle cx="340" cy="120" r="9" class="g-node"/>
+          <circle cx="120" cy="230" r="9" class="g-node"/>
+          <circle cx="210" cy="210" r="16" class="g-node g-node-accent"/>
+          <circle cx="300" cy="270" r="9" class="g-node"/>
+          <circle cx="150" cy="350" r="9" class="g-node"/>
+          <circle cx="260" cy="360" r="9" class="g-node"/>
+        </svg>
+      </div>
+    </div>
   </section>
 
-  <!-- BARU: BAGIAN TENTANG KAMI TEPAT DI BAWAH JUDUL -->
   <section class="tentang" id="tentang">
     <div class="isi">
-      <p class="section-label">Siapa Kami</p>
-      <h2>Tentang Kami</h2>
+      <p class="eyebrow eyebrow-light">Siapa kami</p>
+      <h2>Mitra transformasi digital.</h2>
       <p class="tentang-teks">
         MokletTech adalah mitra transformasi digital terpercaya yang berdedikasi untuk menghadirkan solusi teknologi modern. Kami membantu bisnis, organisasi, dan UMKM di Indonesia berkembang melalui pembuatan produk digital yang inovatif, cepat, serta berpusat pada kenyamanan pengguna.
       </p>
@@ -41,27 +72,38 @@
 
   <section class="layanan" id="layanan">
     <div class="isi">
-      <p class="section-label">Apa yang kami tawarkan</p>
-      <h2>Layanan Kami</h2>
-      
-      <div class="grid">
-        <!-- Kotak 1 -->
-        <div class="kotak">
-          <div class="icon">💻</div>
-          <h3>Web Development</h3>
-          <p>Kami membangun website modern yang responsif dan cepat untuk kebutuhan bisnis Anda.</p>
+      <p class="eyebrow">Apa yang kami tawarkan</p>
+      <h2>Layanan kami.</h2>
+
+      <div class="daftar-layanan">
+        <div class="baris-layanan">
+          <div class="baris-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M12 14 5 20l7 6M28 14l7 6-7 6M23 10l-6 20" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="baris-teks">
+            <h3>Web Development</h3>
+            <p>Kami membangun website modern yang responsif dan cepat untuk kebutuhan bisnis Anda.</p>
+          </div>
         </div>
-        <!-- Kotak 2 -->
-        <div class="kotak">
-          <div class="icon">📱</div>
-          <h3>Mobile App</h3>
-          <p>Aplikasi mobile yang intuitif dan ringan, siap publish di App Store maupun Play Store.</p>
+
+        <div class="baris-layanan">
+          <div class="baris-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="11" y="4" width="18" height="32" rx="3" stroke="currentColor" stroke-width="2.4"/><line x1="17" y1="30" x2="23" y2="30" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+          </div>
+          <div class="baris-teks">
+            <h3>Mobile App</h3>
+            <p>Aplikasi mobile yang intuitif dan ringan, siap publish di App Store maupun Play Store.</p>
+          </div>
         </div>
-        <!-- Kotak 3 -->
-        <div class="kotak">
-          <div class="icon">🎨</div>
-          <h3>UI/UX Design</h3>
-          <p>Desain antarmuka berpusat pada pengguna, dari wireframe hingga prototype interaktif.</p>
+
+        <div class="baris-layanan">
+          <div class="baris-icon" aria-hidden="true">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="15" stroke="currentColor" stroke-width="2.4"/><path d="M20 12v8l6 4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="baris-teks">
+            <h3>UI/UX Design</h3>
+            <p>Desain antarmuka berpusat pada pengguna, dari wireframe hingga prototype interaktif.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -71,7 +113,7 @@
     <div class="isi_footer">
       <div class="footer">
         <div class="logofooter">Moklet<span>Tech</span></div>
-        <p class="tagline">Solusi Digital Untuk Indonesia</p>
+        <p class="tagline">Solusi digital untuk Indonesia.</p>
         <p class="copy">©2026 MokletTech. All rights reserved.</p>
       </div>
 
@@ -81,10 +123,25 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#tentang">Tentang</a></li>
           <li><a href="#layanan">Layanan</a></li>
-          <li><a href="https://wa.me/62821" target="_blank">Kontak</a></li>
+          <li><a href="https://wa.me/62821" target="_blank" rel="noopener">Kontak</a></li>
         </ul>
       </div>
     </div>
   </footer>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const nav = document.getElementById('siteNav');
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', open);
+      toggle.classList.toggle('is-open', open);
+    });
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      nav.classList.remove('is-open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.classList.remove('is-open');
+    }));
+  </script>
 </body>
 </html>
